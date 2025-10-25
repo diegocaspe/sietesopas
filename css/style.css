@@ -1,6 +1,6 @@
 /* Establece el fondo de la página */
 body {
-  background-image: url('fondo1.jpg');  /* Fondo de madera */
+  background-image: url("imagenes/fondo1.jpg");  /* Fondo de madera */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -144,7 +144,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 100px;  /* Ajusta el tamaño del logo */
   height: 100px; /* Ajusta el tamaño del logo */
-  background-image: url('logo.jpg'); /* Ruta del logo */
+  background-image: url("imagenes/logo.jpg"); /* Ruta del logo */
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
   background-position: center; /* Centra la imagen */
   border-radius: 50%;  /* Si deseas bordes redondeados */
