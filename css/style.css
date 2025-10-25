@@ -1,0 +1,186 @@
+/* Establece el fondo de la página */
+body {
+  background-image: url('fondo1.jpg');  /* Fondo de madera */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;        /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;            /* Elimina márgenes del body */
+}
+
+/* Contenido principal */
+.main-content {
+  flex-grow: 1;         /* Hace que el contenido ocupe el espacio restante */
+  margin-top: 20px;     /* Espacio entre el contenido y el navbar */
+}
+
+/* Estilo para el navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+  position: relative;
+  z-index: 10;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+  margin-left: 17px;   /* Espacio a la izquierda del carrusel */
+  margin-right: 17px;  /* Espacio a la derecha del carrusel */
+  margin-top: 20px;    /* Espacio entre el navbar y el carrusel */
+}
+
+.carousel-inner {
+  border-radius: 10px; /* Si deseas bordes redondeados */
+}
+
+.carousel-item img {
+  width: 100%;  /* Hace que la imagen ocupe todo el ancho del carrusel */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .carousel {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #333;  /* Fondo oscuro para el footer */
+  color: white;             /* Color de texto blanco */
+  text-align: center;       /* Centra el texto */
+  padding: 20px;            /* Relleno para el footer */
+  margin-top: 40px;         /* Añade separación entre el contenido y el footer */
+}
+
+/* Estilo para el contenedor principal con los cuadrados */
+.main-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;     /* Centra el contenido verticalmente */
+  height: 100vh;           /* Ocupa toda la altura de la ventana */
+  background-color: transparent; /* Fondo transparente */
+  position: relative;
+}
+
+/* El rectángulo principal */
+.rectangle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre los elementos */
+  width: 80%; /* Ancho del rectángulo */
+  max-width: 1200px; /* Limita el tamaño del rectángulo */
+  position: relative;
+  background-color: transparent;  /* Fondo transparente para el contenedor */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilo para los cuadrados */
+.square {
+  width: 45%; /* Ancho de cada cuadrado */
+  height: 200px; /* Ajustado para darle un poco más de espacio */
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; /* Coloca los elementos de forma vertical */
+  background-color: rgba(255, 255, 255, 0.7);  /* Fondo con opacidad */
+  transition: all 0.3s ease;  /* Suaviza la transición de los efectos */
+}
+
+/* Colores diferentes para cada cuadrado */
+.square:nth-child(1) {
+  background-color: rgba(255, 165, 0, 0.7); /* Color naranja para Bebidas */
+}
+
+.square:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.7); /* Color rojo para Platos Bandera */
+}
+
+.square:nth-child(3) {
+  background-color: rgba(0, 255, 0, 0.7); /* Color verde para Postres */
+}
+
+.square:nth-child(4) {
+  background-color: rgba(0, 0, 255, 0.7); /* Color azul para Sopas */
+}
+
+/* Para las imágenes dentro de los cuadrados */
+.square img {
+  margin-bottom: 10px; /* Espacio entre el logo y el título */
+  width: 80px;  /* Ajusta el tamaño del logo */
+  height: 80px; /* Ajusta el tamaño del logo */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra a la imagen */
+}
+
+/* Títulos de los cuadrados */
+.square p {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Descripción debajo de los cuadrados */
+.square .description {
+  font-size: 14px;
+  color: #555;  /* Color gris para la descripción */
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* Estilo para el logo en el centro */
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;  /* Ajusta el tamaño del logo */
+  height: 100px; /* Ajusta el tamaño del logo */
+  background-image: url('logo.jpg'); /* Ruta del logo */
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen */
+  border-radius: 50%;  /* Si deseas bordes redondeados */
+  border: 2px solid #fff; /* Borde blanco para darle efecto */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .square {
+    width: 90%; /* Los cuadrados ocupan más espacio en pantallas pequeñas */
+  }
+}
+a {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: inherit;  /* El color de los enlaces tomará el color del texto */
+  outline: none;  /* Elimina el borde azul de enfoque */
+  -webkit-tap-highlight-color: transparent; /* Elimina el color del borde en dispositivos móviles */
+}
+
+/* Eliminar el borde azul cuando el enlace está en foco */
+a:focus {
+  outline: none;  /* Elimina el borde azul cuando el enlace es clickeado */
+}
+
+a {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: inherit;  /* El color de los enlaces tomará el color del texto */
+  outline: none;  /* Elimina el borde azul de enfoque */
+}
+.square {
+  text-decoration: none;
+}
+
+
+/* Efecto al pasar el mouse sobre los recuadros */
+.square:hover {
+  transform: scale(1.05);  /* Aumenta ligeramente el tamaño al pasar el mouse */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
