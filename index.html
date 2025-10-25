@@ -9,47 +9,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <!-- Logo junto al nombre del restaurante -->
-            <a class="navbar-brand" href="#">
-                <img src="imagenes/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                Siete Sopas
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Menú
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Contactanos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">
-                            Visitanos
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo junto al nombre del restaurante -->
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Siete Sopas
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Menú
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Contactanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">
+                        Visitanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">
+                        Sobre Nosotros
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Carrusel -->
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -84,54 +93,57 @@
         </button>
     </div>
 
-    <div class="main-container">
-        <div class="rectangle">
-            <!-- Enlace para el recuadro de Bebidas -->
-            <a href="#menu" class="square">
-                <img src="imagenes/bebidas.png" alt="Bebidas" width="50" height="50">
-                <p>Bebidas</p>
-                <p class="description">Disfruta de nuestra amplia variedad de bebidas refrescantes.</p>
-            </a>
+<div class="main-container">
+    <div class="rectangle">
+        <!-- Enlace para el recuadro de Bebidas -->
+        <a href="#menu" class="square">
+            <img src="imagenes/bebidas.png" alt="Bebidas" width="50" height="50">
+            <p>Bebidas</p>
+            <p class="description">Disfruta de nuestra amplia variedad de bebidas refrescantes.</p>
+        </a>
 
-            <!-- Enlace para el recuadro de Platos Bandera -->
-            <a href="#menu" class="square">
-                <img src="imagenes/flag.png" alt="Platos bandera" width="50" height="50">
-                <p>Platos Bandera</p>
-                <p class="description">Saborea los platos típicos de la gastronomía peruana.</p>
-            </a>
+        <!-- Enlace para el recuadro de Platos Bandera -->
+        <a href="#menu" class="square">
+            <img src="imagenes/platobandera.jpg" alt="Platos bandera" width="50" height="50">
+            <p>Platos Bandera</p>
+            <p class="description">Saborea los platos típicos de la gastronomía peruana.</p>
+        </a>
 
-            <!-- Enlace para el recuadro de Postres -->
-            <a href="#menu" class="square">
-                <img src="imagenes/dessert.png" alt="Postres" width="50" height="50">
-                <p>Postres</p>
-                <p class="description">Endulza tu día con nuestros deliciosos postres caseros.</p>
-            </a>
+        <!-- Enlace para el recuadro de Postres -->
+        <a href="#menu" class="square">
+            <img src="imagenes/dessert.jpg" alt="Postres" width="50" height="50">
+            <p>Postres</p>
+            <p class="description">Endulza tu día con nuestros deliciosos postres caseros.</p>
+        </a>
 
-            <!-- Enlace para el recuadro de Sopas -->
-            <a href="#menu" class="square">
-                <img src="imagenes/soups.png" alt="Sopas" width="50" height="50">
-                <p>Sopas</p>
-                <p class="description">Prueba nuestras sopas peruanas, perfectas para cualquier ocasión.</p>
-            </a>
+        <!-- Enlace para el recuadro de Sopas -->
+        <a href="#menu" class="square">
+            <img src="imagenes/sopas.jpg" alt="Sopas" width="50" height="50">
+            <p>Sopas</p>
+            <p class="description">Prueba nuestras sopas peruanas, perfectas para cualquier ocasión.</p>
+        </a>
 
-            <!-- Logo en el centro -->
-            <div class="logo"></div>
-        </div>
+        <!-- Logo en el centro -->
+        <div class="logo"></div>
     </div>
+</div>
+
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Restaurante XYZ - Todos los derechos reservados</p>
-        <div>
-            <a href="#" class="text-white me-4">Facebook</a>
-            <a href="#" class="text-white me-4">Instagram</a>
-            <a href="#" class="text-white">Twitter</a>
-        </div>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Restaurante Siete Sopas - Todos los derechos reservados</p>
+            <div>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

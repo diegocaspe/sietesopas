@@ -7,7 +7,8 @@ body {
   display: flex;        /* Utiliza flexbox para el diseño */
   flex-direction: column; /* Coloca los elementos en una columna */
   height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
-  margin: 0;            /* Elimina márgenes del body */
+  margin: 0;
+  font-family: "EB Garamond", serif; /* Mantén la fuente actual */
 }
 
 /* Contenido principal */
@@ -18,42 +19,78 @@ body {
 
 /* Estilo para el navbar */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
-  position: relative;
-  z-index: 10;
+    background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF; /* Blanco para los enlaces */
+  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 /* Estilo para el carrusel */
 .carousel {
-  margin-left: 17px;   /* Espacio a la izquierda del carrusel */
-  margin-right: 17px;  /* Espacio a la derecha del carrusel */
-  margin-top: 20px;    /* Espacio entre el navbar y el carrusel */
+    border-radius: 10px; /* Corrige el espacio extra */
+    margin: 0 auto;      /* Centra el carrusel automáticamente con márgenes iguales */
+    margin-top: 20px;    /* Espacio entre el navbar y el carrusel */
+    width: 90%;          /* Asegura que el carrusel ocupe el 90% del ancho disponible */
+    max-width: 1200px;   /* Máximo ancho del carrusel para no estirarlo demasiado */
 }
 
 .carousel-inner {
-  border-radius: 10px; /* Si deseas bordes redondeados */
+    width: 100%;  /* Hace que el contenedor del carrusel ocupe todo el espacio */
+    height: 100%; /* Ajusta la altura al 100% para mantener la proporción */
 }
 
 .carousel-item img {
-  width: 100%;  /* Hace que la imagen ocupe todo el ancho del carrusel */
-  height: auto; /* Mantiene la proporción de la imagen */
+    width: 100%;  /* Hace que la imagen ocupe todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el área sin deformar la imagen */
 }
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .carousel {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+    .carousel {
+        margin-left: 5px;  /* Ajusta los márgenes en pantallas pequeñas */
+        margin-right: 5px;
+    }
+
+    .carousel-item img {
+        width: 100%;  /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de las imágenes */
+    }
 }
 
+
 /* Estilo para el footer */
+/* Estilo básico para el footer */
 footer {
-  background-color: #333;  /* Fondo oscuro para el footer */
-  color: white;             /* Color de texto blanco */
-  text-align: center;       /* Centra el texto */
-  padding: 20px;            /* Relleno para el footer */
-  margin-top: 40px;         /* Añade separación entre el contenido y el footer */
+  background-color: rgba(52, 213, 71, 0.68); /* Fondo oscuro */
+  color: white;           /* Texto blanco */
+  text-align: center;     /* Centra el texto */
+  padding: 20px;          /* Espaciado interno */
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+  color: #E27D2B; /* Color naranja para los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+footer a:hover {
+  color: #FFD700; /* Cambio a dorado al pasar el mouse */
 }
 
 /* Estilo para el contenedor principal con los cuadrados */
@@ -80,7 +117,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
 
-/* Estilo para los cuadrados */
+/* Estilo para los cuadros */
 .square {
   width: 45%; /* Ancho de cada cuadrado */
   height: 200px; /* Ajustado para darle un poco más de espacio */
@@ -91,25 +128,22 @@ footer {
   align-items: center;
   text-align: center;
   flex-direction: column; /* Coloca los elementos de forma vertical */
-  background-color: rgba(255, 255, 255, 0.7);  /* Fondo con opacidad */
-  transition: all 0.3s ease;  /* Suaviza la transición de los efectos */
+  background-color: rgba(211, 117, 18, 0.78); /* Color base para todos los cuadros */
+  opacity: 0;  /* Los cuadros comienzan invisibles */
+  transform: translateY(50px); /* Los cuadros están desplazados hacia abajo */
+  transition: all 0.6s ease;  /* Suaviza la transición de los efectos */
 }
 
 /* Colores diferentes para cada cuadrado */
-.square:nth-child(1) {
-  background-color: rgba(255, 165, 0, 0.7); /* Color naranja para Bebidas */
-}
+.square:nth-child(1) { background-color: rgba(211, 117, 18, 0.78); } /* Naranja para Bebidas */
+.square:nth-child(2) { background-color: rgba(211, 117, 18, 0.78); } /* Rojo para Platos Bandera */
+.square:nth-child(3) { background-color: rgba(211, 117, 18, 0.78); } /* Verde para Postres */
+.square:nth-child(4) { background-color: rgba(211, 117, 18, 0.78); } /* Azul para Sopas */
 
-.square:nth-child(2) {
-  background-color: rgba(255, 0, 0, 0.7); /* Color rojo para Platos Bandera */
-}
-
-.square:nth-child(3) {
-  background-color: rgba(0, 255, 0, 0.7); /* Color verde para Postres */
-}
-
-.square:nth-child(4) {
-  background-color: rgba(0, 0, 255, 0.7); /* Color azul para Sopas */
+/* Animación para mostrar el cuadro */
+.square.visible {
+  opacity: 1;  /* Hacemos el cuadro visible */
+  transform: translateY(0);  /* Los cuadros se mueven a su posición final */
 }
 
 /* Para las imágenes dentro de los cuadrados */
@@ -136,6 +170,8 @@ footer {
   padding: 0 10px;
 }
 
+
+
 /* Estilo para el logo en el centro */
 .logo {
   position: absolute;
@@ -157,6 +193,7 @@ footer {
     width: 90%; /* Los cuadrados ocupan más espacio en pantallas pequeñas */
   }
 }
+
 a {
   text-decoration: none;  /* Elimina el subrayado */
   color: inherit;  /* El color de los enlaces tomará el color del texto */
@@ -177,7 +214,6 @@ a {
 .square {
   text-decoration: none;
 }
-
 
 /* Efecto al pasar el mouse sobre los recuadros */
 .square:hover {
