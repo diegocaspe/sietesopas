@@ -1,0 +1,130 @@
+/* Establece el fondo de la página */
+body {
+  background-image: url("../imagenes/fondo1.jpg");  /* Fondo de madera */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;        /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;
+  font-family: "EB Garamond", serif; /* Mantén la fuente actual */
+}
+
+.text-center{
+    color: white;
+}
+
+/* Estilo para el navbar */
+.navbar {
+  background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF; /* Blanco para los enlaces */
+  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Sección Visítanos */
+#visitanos {
+  background-color: transparent; /* Fondo transparente */
+  padding: 60px 0; /* Relleno superior e inferior */
+}
+
+#visitanos h2 {
+  color: white; /* Título de la sección */
+  background-color: brown;
+  border-radius: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Estilo para las tarjetas de cada local */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  background-color:rgba(52, 213, 71, 0.68);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color:brown;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: brown;
+  text-align: center;
+}
+
+/* Mapa dentro de la tarjeta */
+#map1, #map2, #map3, #map4, #map5, #map6, #map7, #map8, #map9 {
+  width: 100%;        /* Hacemos que el mapa ocupe el 100% del ancho de la tarjeta */
+  height: 200px;      /* Ajustamos la altura para que quede en línea con las demás tarjetas */
+  border-radius: 10px;
+}
+
+/* Diseño de la fila de las tarjetas: 3 por fila */
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;          /* Espacio entre las tarjetas */
+}
+
+.col-md-4 {
+  flex: 1 1 30%;      /* 3 tarjetas por fila (con un pequeño margen entre ellas) */
+  box-sizing: border-box; /* Asegura que no se rompa el diseño */
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 1 1 100%;    /* En pantallas pequeñas, cada tarjeta ocupará toda la fila */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}
+
+/* Estilo para los enlaces */
+a {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: inherit;  /* El color de los enlaces tomará el color del texto */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+a:hover {
+  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}

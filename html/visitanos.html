@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitanos - Siete Sopas</title>
+    <title>Visítanos - Siete Sopas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/logoradius.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/visitanos.css">
+    <script src="../js/maps.js"></script>
 </head>
 <body>
-    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo junto al nombre del restaurante -->
+        <a class="navbar-brand" href="index.html">
+            <img src="../imagenes/logoradius.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Siete Sopas
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/menu.html">
+                        Menú
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/contactanos.html">
+                        Contactanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/visitanos.html" >
+                        Visitanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/nosotros.html">
+                        Sobre Nosotros
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección Visítanos -->
+<section id="visitanos" class="container my-5">
+    <h2 class="text-center">NUESTRAS SEDES</h2>
+    <div class="row g-4">
+        <!-- Local 1 - Siete Sopas Mega Plaza -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/megaplaza.jpg" class="card-img-top" alt="Siete Sopas Mega Plaza">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Mega Plaza</h5>
+                    <p class="text-center">Av. Arequipa 2394, Lince, Lima</p>
+                    <div id="map1" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 2 - Siete Sopas Plaza Norte -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/plazanortev2.jpg" class="card-img-top" alt="Siete Sopas Plaza Norte">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Plaza Norte</h5>
+                    <p class="text-center">Av. Primavera 1280, Santiago de Surco, Lima</p>
+                    <div id="map2" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 3 - Siete Sopas Lince -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/lince.jpg" class="card-img-top" alt="Siete Sopas Lince">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Lince</h5>
+                    <p class="text-center">Av. Arequipa 2394, Lince, Lima</p>
+                    <div id="map3" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 4 - Siete Sopas Santiago de Surco -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/santiago.jpg" class="card-img-top" alt="Siete Sopas Santiago de Surco">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Santiago de Surco</h5>
+                    <p class="text-center">Av. Salaverry 1900, Jesús María, Lima</p>
+                    <div id="map4" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 5 - Siete Sopas Surquillo -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/surquillo.jpg" class="card-img-top" alt="Siete Sopas Surquillo">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Surquillo</h5>
+                    <p class="text-center">Av. Pardo y Aliaga 500, Miraflores, Lima</p>
+                    <div id="map5" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 6 - Siete Sopas Miraflores -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/miraflores.jpg" class="card-img-top" alt="Siete Sopas Miraflores">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Miraflores</h5>
+                    <p class="text-center">Av. Pardo y Aliaga 500, Miraflores, Lima</p>
+                    <div id="map6" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 7 - Siete Sopas Santa Anita -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/santaanita.jpg" class="card-img-top" alt="Siete Sopas Santa Anita">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Santa Anita</h5>
+                    <p class="text-center">Av. Los Alamos 1040, Villa El Salvador, Lima</p>
+                    <div id="map7" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 8 - Siete Sopas SJ Lima -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/sanjuan.png" class="card-img-top" alt="Siete Sopas SJ Lima">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas SJ Lima</h5>
+                    <p class="text-center">Av. Los Alamos 1040, Villa El Salvador, Lima</p>
+                    <div id="map8" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local 9 - Siete Sopas Gamarra -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../imagenes/gamarra.jpg" class="card-img-top" alt="Siete Sopas Gamarra">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Siete Sopas Gamarra</h5>
+                    <p class="text-center">Av. Gamarra, La Victoria, Lima</p>
+                    <div id="map9" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cargar API de Google Maps con tu API Key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6ctdBU1PatNz_wwD2kVLmB6_87Dwsw1M&callback=initMap" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
 </html>
+

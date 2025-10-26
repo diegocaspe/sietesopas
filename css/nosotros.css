@@ -1,0 +1,95 @@
+body {
+  background-image: url("../imagenes/fondo1.jpg");  /* Fondo de madera */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;        /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;
+  font-family: "EB Garamond", serif; /* Mantén la fuente actual */
+}
+
+.text-center{
+    color: white;
+}
+
+/* Estilo para el navbar */
+.navbar {
+  background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF; /* Blanco para los enlaces */
+  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Estilo para el encabezado (titulo principal) */
+header {
+    background-color: #D32F2F; /* Rojo oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Estilo para las secciones (Historia, Misión, Visión, Valores, Propuesta) */
+section {
+  background-color: #f4f4f4; /* Fondo gris claro */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Títulos en las secciones */
+h2 {
+  color: #4CAF50; /* Verde para los títulos */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los textos */
+p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilo para las imágenes dentro de las secciones */
+section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Estilo de las listas de valores */
+.list-group-item {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Estilo del mapa */
+#map {
+  border-radius: 10px;
+}
