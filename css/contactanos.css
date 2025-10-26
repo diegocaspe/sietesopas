@@ -78,10 +78,6 @@ form {
 .navbar-toggler {
   border: none;
 }
-.navbar-brand {
-    border-radius: 40px;
-}
-
 /* Estilo para la sección de redes sociales */
 .social-links {
   background-color: rgba(52, 213, 71, 0.9);
