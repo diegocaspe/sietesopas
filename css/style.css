@@ -44,14 +44,15 @@ body {
     border-radius: 10px; /* Corrige el espacio extra */
     margin: 0 auto;      /* Centra el carrusel automáticamente con márgenes iguales */
     margin-top: 20px;    /* Espacio entre el navbar y el carrusel */
-    width: 90%;          /* Asegura que el carrusel ocupe el 90% del ancho disponible */
+    width: 80%;          /* Asegura que el carrusel ocupe el 90% del ancho disponible */
     max-width: 1200px;   /* Máximo ancho del carrusel para no estirarlo demasiado */
 }
 
 .carousel-inner {
-    width: 100%;  /* Hace que el contenedor del carrusel ocupe todo el espacio */
-    height: 100%; /* Ajusta la altura al 100% para mantener la proporción */
+    display: flex;
+    animation:  15s linear infinite; /* Movimiento continuo */
 }
+
 
 .carousel-item img {
     width: 100%;  /* Hace que la imagen ocupe todo el ancho del carrusel */

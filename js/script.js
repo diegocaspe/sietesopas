@@ -15,4 +15,3 @@ const observer = new IntersectionObserver((entries, observer) => {
 squares.forEach(square => {
   observer.observe(square);
 });
-
