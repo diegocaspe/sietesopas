@@ -1,5 +1,6 @@
+/* Fondo de madera */
 body {
-  background-image: url("../imagenes/fondo1.jpg");  /* Fondo de madera */
+  background-image: url("../imagenes/fondo1.jpg"); /* Fondo de madera */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -10,13 +11,9 @@ body {
   font-family: "EB Garamond", serif; /* Mantén la fuente actual */
 }
 
-.text-center{
-    color: white;
-}
-
 /* Estilo para el navbar */
 .navbar {
-  background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+  background-color: rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
   position: relative;
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
@@ -35,61 +32,132 @@ body {
   border: none;
 }
 
-/* Estilo para el encabezado (titulo principal) */
-header {
-    background-color: #D32F2F; /* Rojo oscuro */
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-/* Estilo para las secciones (Historia, Misión, Visión, Valores, Propuesta) */
-section {
-  background-color: #f4f4f4; /* Fondo gris claro */
-  padding: 40px;
+/* Contenedor de la información de la empresa */
+.info-box {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto de transición */
 }
 
-/* Títulos en las secciones */
+.info-img-container {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  margin-right: 20px;
+}
+
+.info-img {
+  width: 100%; /* Ajusta el tamaño de la imagen */
+  height: 150px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Mantiene la relación de aspecto sin distorsionar */
+  border-radius: 10px;
+}
+
+.info-text {
+  color: white;
+  flex-grow: 1;
+}
+
 h2 {
-  color: #4CAF50; /* Verde para los títulos */
   font-size: 2rem;
+  margin-bottom: 10px;
+  color: #52d541; /* Un verde suave */
+}
+
+/* Contenedor del carrusel */
+.carousel {
+  max-width: 800px; /* Limita el ancho máximo del carrusel */
+  margin: 0 auto; /* Centra el carrusel en la pantalla */
+  width: 100%; /* Asegura que ocupe todo el espacio disponible, pero con un límite */
+  display: block; /* Asegura que el carrusel se muestre como un bloque */
+}
+
+/* Contenedor del carrusel */
+.carousel {
+  max-width: 800px; /* Limita el ancho máximo del carrusel */
+  margin: 0 auto; /* Centra el carrusel en la pantalla */
+  width: 100%; /* Asegura que ocupe todo el espacio disponible, pero con un límite */
+  display: block; /* Asegura que el carrusel se muestre como un bloque */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido del carrusel */
+  transition: none !important; /* Elimina cualquier transición de cambio de tamaño */
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-item img {
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  width: 15vw; /* El tamaño de las imágenes será relativo al 15% del ancho de la ventana */
+  height: 15vw; /* Asegura que la imagen sea cuadrada (relativo al ancho de la ventana) */
+  object-fit: cover; /* Asegura que la imagen mantenga la proporción sin distorsión */
+  object-position: center; /* Centra la imagen dentro del círculo */
+  transition: none !important; /* Elimina cualquier transición extra */
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Fondo y bordes redondeados del carrusel */
+.carousel-inner {
+  padding: 20px;
+  background-color: #f0e4d7; /* Color de fondo suave para el carrusel */
+  border-radius: 15px; /* Bordes redondeados para el carrusel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+/* Estilo para los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #52d541; /* Verde de la marca */
+}
+
+
+/* Diseño para las redes sociales */
+.social-links {
+  background-color: rgba(52, 213, 71, 0.9);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.social-links h3 {
+  color: white;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-/* Estilo para los textos */
-p {
-  color: #555;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.social-icons a {
+  margin: 0 15px;
+  outline: none; /* Elimina la línea azul del enfoque */
+  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
 }
 
-/* Estilo para las imágenes dentro de las secciones */
-section img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo de las listas de valores */
-.list-group-item {
-  font-size: 1.1rem;
-  color: #333;
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
-/* Estilo del mapa */
-#map {
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .social-links h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
 }
+
+

@@ -221,3 +221,47 @@ a {
   transform: scale(1.05);  /* Aumenta ligeramente el tamaño al pasar el mouse */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
 }
+
+/* Diseño para las redes sociales */
+.social-links {
+  background-color: rgba(52, 213, 71, 0.9);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.social-links h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  outline: none; /* Elimina la línea azul del enfoque */
+  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .social-links h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+

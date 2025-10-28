@@ -49,7 +49,6 @@ body {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2.5rem;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -77,7 +76,7 @@ body {
 }
 
 .card-title {
-  font-size: 1.5rem;
+
   color:brown;
   text-align: center;
   margin-bottom: 10px;
@@ -127,4 +126,46 @@ a {
 /* Efecto al pasar el mouse sobre los enlaces */
 a:hover {
   color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}
+
+/* Estilo para la sección de redes sociales */
+.social-links {
+  background-color: rgba(52, 213, 71, 0.9);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.social-links h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+}
+
+.social-icons img {
+  width: 50px; /* Tamaño ajustado */
+  height: 50px; /* Asegura que la imagen sea cuadrada */
+  border-radius: 50%; /* Redondea las imágenes, haciéndolas circulares */
+  border: 2px solid #fff; /* Añade un borde blanco alrededor de los íconos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Asegurar que los íconos sean responsivos en pantallas pequeñas */
+@media (max-width: 768px) {
+  .social-links h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
 }

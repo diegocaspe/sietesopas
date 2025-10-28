@@ -1,10 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú - Siete Sopas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú - Siete Sopas</title>
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="icon" href="../imagenes/logoradius.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo junto al nombre del restaurante -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../imagenes/logoradius.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Siete Sopas
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">
+                        Menú
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">
+                        Contactanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visitanos.html" >
+                        Visitanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">
+                        Sobre Nosotros
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <header>
+    <h1>Menú del Restaurante</h1>
+    <p>Sabores peruanos que conquistan </p>
+  </header>
+
+  <div class="category-buttons">
+    <button class="active" data-category="todos">Todos</button>
+    <button data-category="Sándwich">Sándwich</button>
+    <button data-category="platos">Platos Bandera</button>
+    <button data-category="sopas">Sopas</button>
+    <button data-category="postres">Postres</button>
+    <button data-category="bebidas">Bebidas</button>
+  </div>
+
+  <!-- ahora cada bloque es una sección con su h2 (subtítulo) -->
+  <main class="menu-wrapper">
+
+    <!-- SÁNGUCHES -->
+    <section class="menu-section" data-category="Sándwich">
+      <h2>🥪 Sándwich</h2>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/Pavoalaleñasanguches.jpg" alt="Pavo a la leña">
+          <h5>Pavo a la leña</h5>
+          <p>Pavo jugoso y ahumado, cocido lentamente al fuego de leña, acompañado con su jugo natural y papas doradas.</p>
+          <span class="price">S/ 12.00</span>
+        </div>
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/PanconChicharron.jpg" alt="Pan con Chicharron">
+          <h5>Pan con Chicharron</h5>
+          <p>Pan artesanal con chicharrón crujiente, camote frito y salsa criolla fresca..</p>
+          <span class="price">S/ 10.00</span>
+        </div>
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/SanguchesMilanesa.jpg" alt="Sanguches Milanesa">
+          <h5>Sanguches Milanesa</h5>
+          <p>Pan artesanal con filete de pollo empanizado, lechuga fresca, tomate y mayonesa casera.</p>
+          <span class="price">S/ 14.00</span>
+        </div>
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/pollodeshilachado2.jpg" alt="Pollo deshilachado">
+          <h5>Pollo deshilachado</h5>
+          <p>Pan artesanal relleno con pollo tierno deshilachado y mayonesa casera, acompañado de verduras frescas.</p>
+          <span class="price">S/ 15.00</span>
+        </div>
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/Lechonalaleñasanguches.jpg" alt="Pan de Lechon a la leña">
+          <h5>Lechon a la leña</h5>
+          <p>Cerdo jugoso y dorado, cocido lentamente al fuego de leña, acompañado de su jugo natural y pan artesanal.</p>
+          <span class="price">S/ 14.00</span>
+        </div>
+        <div class="menu-item" data-category="Sándwich">
+          <img src="../imagenes/Sándwichdejamónymanzana.jpg" alt="Sándwich de jamón y manzana">
+          <h5>Sándwich de jamón y manzana</h5>
+          <p>Pan artesanal con jamón jugoso, rodajas frescas de manzana y mayonesa casera.</p>
+          <span class="price">S/ 13.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATOS BANDERA -->
+    <section class="menu-section" data-category="platos">
+      <h2>🍽️ Platos Bandera</h2>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/lomosaltado2.jpg" alt="Lomo Saltado">
+          <h5>Lomo Saltado</h5>
+          <p>Clásico plato peruano salteado con papas fritas y arroz.</p>
+          <span class="price">S/ 25.00</span>
+        </div>
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/MilanesadePolloBienPobre.jpg" alt="Milanesa de Pollo Bien Pobre">
+          <h5>Milanesa de Pollo Bien Pobre</h5>
+          <p>Filete de pollo empanizado, servido con papas fritas caseras y salsa criolla.</p>
+          <span class="price">S/ 16.00</span>
+        </div>
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/PolloBrosterconChaufa.jpg" alt="Pollo Broster con Chaufa">
+          <h5>Pollo Broster con Chaufa</h5>
+          <p>Crujiente pollo broster acompañado de arroz chaufa salteado con verduras y salsa especial.</p>
+          <span class="price">S/ 22.00</span>
+        </div>
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/pollosaltado.jpg" alt="Pollo Saltado">
+          <h5>Pollo Saltado</h5>
+          <p>Tiras de pollo salteadas con cebolla, tomate y pimientos, acompañadas de arroz blanco y papas fritas.</p>
+          <span class="price">S/ 19.00</span>
+        </div>
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/TallarínalaHuancaínaconLomoSaltado.jpg" alt="Tallarín a la Huancaína con Lomo Saltado">
+          <h5>Tallarín a la Huancaína con Lomo Saltado</h5>
+          <p>Tallarines bañados en cremosa salsa huancaína, acompañados de jugoso lomo saltado con cebolla y tomate.</p>
+          <span class="price">S/ 23.50</span>
+        </div>
+        <div class="menu-item" data-category="platos">
+          <img src="../imagenes/Arrozconmariscos.jpg" alt="Arroz con Mariscos">
+          <h5>Arroz con Mariscos</h5>
+          <p>Arroz sazonado y colorido, acompañado de una selección de mariscos frescos salteados y jugo de limón.</p>
+          <span class="price">S/ 20.50</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOPAS -->
+    <section class="menu-section" data-category="sopas">
+      <h2>🍲 Sopas</h2>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/CaldodeCordero.jpg" alt="Caldo de Cordero">
+          <h5>Caldo de Cordero</h5>
+          <p>Suave y nutritivo caldo con tiernos trozos de cordero, verduras frescas y especias tradicionales.</p>
+          <span class="price">S/ 18.00</span>
+        </div>
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/CaldodeGallina.jpg" alt="Caldo de Gallina">
+          <h5>Caldo de Gallina</h5>
+          <p>Rico y reconfortante caldo con tierna gallina, fideos y verduras frescas, preparado al estilo casero.</p>
+          <span class="price">S/ 15.00</span>
+        </div>
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/SopaalaMinuta.jpg" alt="Sopa a la Minuta">
+          <h5>Sopa a la Minuta</h5>
+          <p>Caldo casero con fideos, verduras frescas y trozos de carne tierna, servido caliente y reconfortante.</p>
+          <span class="price">S/ 14.00</span>
+        </div>
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/SopadeMenestron.jpg" alt="Sopa de Menestron">
+          <h5>Sopa de Menestron</h5>
+          <p>Reconfortante sopa de verduras variadas y legumbres, cocinadas lentamente en un delicioso caldo casero.</p>
+          <span class="price">S/ 17.00</span>
+        </div>
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/SopaShambar.jpg" alt="Sopa Shambar">
+          <h5>Sopa Shambar</h5>
+          <p>Tradicional sopa peruana de frejoles, trigo y carnes, cocida lentamente con especias andinas y hierbas aromáticas.</p>
+          <span class="price">S/ 20.00</span>
+        </div>
+        <div class="menu-item" data-category="sopas">
+          <img src="../imagenes/Sopadedieta.jpg" alt="Sopa de Dieta">
+          <h5>Sopa de Dieta</h5>
+          <p>Ligera y nutritiva sopa de verduras frescas, ideal para una comida saludable y reconfortante</p>
+          <span class="price">S/ 11.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTRES -->
+    <section class="menu-section" data-category="postres">
+      <h2>🍰 Postres</h2>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/Cremavolteada.jpg" alt="Crema volteada">
+          <h5>Crema volteada</h5>
+          <p>Delicioso postre de textura suave y cremosa, con un toque de caramelo casero.</p>
+          <span class="price">S/ 8.00</span>
+        </div>
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/MazamorraMorada.jpg" alt="Mazamorra Morada">
+          <h5>Mazamorra Morada</h5>
+          <p>Postre de maíz morado con frutas y canela.</p>
+          <span class="price">S/ 7.00</span>
+        </div>
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/Arrozconleche.jpg" alt="Arroz con Leche">
+          <h5>Arroz con Leche</h5>
+          <p>Dulce tradicional con leche, canela y pasas.</p>
+          <span class="price">S/ 7.00</span>
+        </div>
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/Tresleches.jpg" alt="Tres Leches">
+          <h5>Tres Leches</h5>
+          <p>Bizcocho suave bañado en mezcla de tres leches.</p>
+          <span class="price">S/ 9.00</span>
+        </div>
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/Tartadechocolate.jpg" alt="Tarta de chocolate">
+          <h5>Tarta de chocolate</h5>
+          <p>Suave y húmeda tarta de chocolate, acompañada de un toque de crema o cobertura dulce.</p>
+          <span class="price">S/ 8.00</span>
+        </div>
+        <div class="menu-item" data-category="postres">
+          <img src="../imagenes/Helado.jpg" alt="Helado Artesanal">
+          <h5>Helado Artesanal</h5>
+          <p>Helados naturales </p>
+          <span class="price">S/ 8.50</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section class="menu-section" data-category="bebidas">
+      <h2>🍹 Bebidas</h2>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/ChichaMorada.jpg" alt="Chicha Morada">
+          <h5>Chicha Morada</h5>
+          <p>Bebida refrescante de maíz morado, piña y canela.</p>
+          <span class="price">S/ 6.00</span>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/MaracuyaRefresco.jpg" alt="Jugo de Maracuyá">
+          <h5>Jugo de Maracuyá</h5>
+          <p>Jugo natural de maracuyá recién exprimido.</p>
+          <span class="price">S/ 7.00</span>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/LimonadaFrozen.jpg" alt="Limonada">
+          <h5>Limonada Frozen</h5>
+          <p>Refrescante bebida natural con limón y menta.</p>
+          <span class="price">S/ 6.50</span>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/gaseosa.jpg" alt="Gaseosa">
+          <h5>Gaseosa</h5>
+          <p></p>
+          <span class="price">S/ 8.00</span>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/cervezanegra.jpg" alt="Cerveza Negra">
+          <h5>Cerveza Negra</h5>
+          <p>Café artesanal 100% peruano de altura.</p>
+          <span class="price">S/ 7.00</span>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+          <img src="../imagenes/piscoSour.jpg" alt="Pisco Sour">
+          <h5>Pisco Sour</h5>
+          <p>Cóctel clásico peruano con pisco y limón.</p>
+          <span class="price">S/ 14.00</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Redes Sociales y Pedidos Ya -->
+    <div class="social-links text-center" style="margin-top: 50px; background-color: rgba(52, 213, 71, 0.9); padding: 20px;">
+        <h3>¡Síguenos en nuestras redes sociales o haz tu pedido!</h3>
+        <div class="social-icons" style="margin-top: 20px;">
+            <a href="https://www.facebook.com/SieteSopas?locale=es_LA" target="_blank" class="social-icon"
+                style="margin: 0 15px;">
+                <img src="../imagenes/facebook.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/sietesopas/" target="_blank" class="social-icon" style="margin: 0 15px;">
+                <img src="../imagenes/instagram.jpg" alt="Instagram" width="40" height="40">
+            </a>
+            <a href="https://www.pedidosya.com.pe/cadenas/siete-sopas" target="_blank" class="social-icon" style="margin: 0 15px;">
+                <img src="../imagenes/pedidosya.png" alt="Pedidos Ya" width="40" height="40">
+            </a>
+        </div>
+    </div>
+
+  <script src="../js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
 </html>

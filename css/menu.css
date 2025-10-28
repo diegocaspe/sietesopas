@@ -1,0 +1,203 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: url("../imagenes/fondo1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Estilo para el navbar */
+.navbar {
+    background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF; /* Blanco para los enlaces */
+  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* === Encabezado Verde === */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: #fff;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+  color: #e8f5e9;
+}
+
+/* === Botones de Categorías === */
+.category-buttons {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.category-buttons button {
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  padding: 10px 22px;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.category-buttons button:hover,
+.category-buttons button.active {
+  background: #2e7d32;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* === Barra de búsqueda === */
+.search-bar {
+  text-align: center;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 2px solid #43a047;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 8px #43a047;
+}
+
+/* === Secciones === */
+.menu-section {
+  margin: 30px auto;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.menu-section h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* === Platos === */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 15px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.menu-item h5 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Diseño para las redes sociales */
+.social-links {
+  background-color: rgba(52, 213, 71, 0.9);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.social-links h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  outline: none; /* Elimina la línea azul del enfoque */
+  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .social-links h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
