@@ -29,6 +29,24 @@ body {
     background-size: cover;
 }
 
+/* Estilo para las imágenes de las mesas */
+.mesa-img-wrapper {
+    width: 120px;  /* Tamaño fijo para las imágenes */
+    height: 120px; /* Tamaño fijo para las imágenes */
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f1f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mesa-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
 /* Estilo para los botones de las mesas */
 .btn-success {
     background-color: #28a745;

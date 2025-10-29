@@ -15,14 +15,14 @@ const TABLAS_CONFIG = [
   { id: 'M2',  type: '4', img: '../imagenes/mesa4.png' },
   { id: 'M3',  type: '2', img: '../imagenes/mesa2.png' },
   { id: 'M4',  type: '2', img: '../imagenes/mesa2.png' },
-  { id: 'M5',  type: '1', img: '../imagenes/mesapersonal.png' },
+  { id: 'M5',  type: '1', img: '../imagenes/mesa1.png' },
   { id: 'M6',  type: '4', img: '../imagenes/mesa4.png' },
   { id: 'M7',  type: '2', img: '../imagenes/mesa2.png' },
-  { id: 'M8',  type: '1', img: '../imagenes/mesapersonal.png' },
+  { id: 'M8',  type: '1', img: '../imagenes/mesa1.png' },
   { id: 'M9',  type: '4', img: '../imagenes/mesa4.png' },
   { id: 'M10', type: '2', img: '../imagenes/mesa2.png' },
   { id: 'M11', type: '4', img: '../imagenes/mesa4.png' },
-  { id: 'M12', type: '1', img: '../imagenes/mesapersonal.png' },
+  { id: 'M12', type: '1', img: '../imagenes/mesa1.png' },
   // Agrega más mesas si lo necesitas...
 ];
 
