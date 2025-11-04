@@ -4,225 +4,83 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;        /* Utiliza flexbox para el diseño */
+  display: flex;
   flex-direction: column; /* Coloca los elementos en una columna */
-  height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+  height: 100vh;
   margin: 0;
-  font-family: "EB Garamond", serif; /* Mantén la fuente actual */
-}
-
-/* Contenido principal */
-.main-content {
-  flex-grow: 1;         /* Hace que el contenido ocupe el espacio restante */
-  margin-top: 20px;     /* Espacio entre el contenido y el navbar */
+  font-family: "EB Garamond", serif;
 }
 
 /* Estilo para el navbar */
 .navbar {
-    background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+  background-color: rgba(52, 213, 71, 0.68);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .navbar .navbar-nav .nav-link {
-  color: #FFFFFF; /* Blanco para los enlaces */
-  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+  color: #FFFFFF;
+  font-size: 1.1rem;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
-}
-
-.navbar-toggler {
-    border: none;
+  color: #E27D2B;
 }
 
 /* Estilo para el carrusel */
 .carousel {
-    border-radius: 10px; /* Corrige el espacio extra */
-    margin: 0 auto;      /* Centra el carrusel automáticamente con márgenes iguales */
-    margin-top: 20px;    /* Espacio entre el navbar y el carrusel */
-    width: 80%;          /* Asegura que el carrusel ocupe el 90% del ancho disponible */
-    max-width: 1200px;   /* Máximo ancho del carrusel para no estirarlo demasiado */
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
 }
-
-.carousel-inner {
-    display: flex;
-    animation:  15s linear infinite; /* Movimiento continuo */
-}
-
 
 .carousel-item img {
-    width: 100%;  /* Hace que la imagen ocupe todo el ancho del carrusel */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Cubre el área sin deformar la imagen */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .carousel {
-        margin-left: 5px;  /* Ajusta los márgenes en pantallas pequeñas */
-        margin-right: 5px;
-    }
-
-    .carousel-item img {
-        width: 100%;  /* Asegura que las imágenes sean responsivas */
-        height: auto; /* Mantiene la proporción de las imágenes */
-    }
-}
-
-
-/* Estilo para el footer */
-/* Estilo básico para el footer */
-footer {
-  background-color: rgba(52, 213, 71, 0.68); /* Fondo oscuro */
-  color: white;           /* Texto blanco */
-  text-align: center;     /* Centra el texto */
-  padding: 20px;          /* Espaciado interno */
-}
-
-/* Estilo para los enlaces dentro del footer */
-footer a {
-  color: #E27D2B; /* Color naranja para los enlaces */
-  text-decoration: none; /* Elimina el subrayado */
-}
-
-/* Efecto al pasar el mouse sobre los enlaces */
-footer a:hover {
-  color: #FFD700; /* Cambio a dorado al pasar el mouse */
-}
-
-/* Estilo para el contenedor principal con los cuadrados */
-.main-container {
-  display: flex;
-  justify-content: center; /* Centra el contenido */
-  align-items: center;     /* Centra el contenido verticalmente */
-  height: 100vh;           /* Ocupa toda la altura de la ventana */
-  background-color: transparent; /* Fondo transparente */
-  position: relative;
-}
-
-/* El rectángulo principal */
-.rectangle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Espacio entre los elementos */
-  width: 80%; /* Ancho del rectángulo */
-  max-width: 1200px; /* Limita el tamaño del rectángulo */
-  position: relative;
-  background-color: transparent;  /* Fondo transparente para el contenedor */
-  padding: 20px;
+/* Diseño para los cuadros de enlaces */
+.card.custom-card {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  background-color: green; /* Fondo rojo pastel */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para los cuadros */
-.square {
-  width: 45%; /* Ancho de cada cuadrado */
-  height: 200px; /* Ajustado para darle un poco más de espacio */
-  margin: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column; /* Coloca los elementos de forma vertical */
-  background-color: rgba(211, 117, 18, 0.78); /* Color base para todos los cuadros */
-  opacity: 0;  /* Los cuadros comienzan invisibles */
-  transform: translateY(50px); /* Los cuadros están desplazados hacia abajo */
-  transition: all 0.6s ease;  /* Suaviza la transición de los efectos */
+.card.custom-card:hover {
+  transform: scale(1.05);
 }
 
-/* Colores diferentes para cada cuadrado */
-.square:nth-child(1) { background-color: rgba(211, 117, 18, 0.78); } /* Naranja para Bebidas */
-.square:nth-child(2) { background-color: rgba(211, 117, 18, 0.78); } /* Rojo para Platos Bandera */
-.square:nth-child(3) { background-color: rgba(211, 117, 18, 0.78); } /* Verde para Postres */
-.square:nth-child(4) { background-color: rgba(211, 117, 18, 0.78); } /* Azul para Sopas */
-
-/* Animación para mostrar el cuadro */
-.square.visible {
-  opacity: 1;  /* Hacemos el cuadro visible */
-  transform: translateY(0);  /* Los cuadros se mueven a su posición final */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/* Para las imágenes dentro de los cuadrados */
-.square img {
-  margin-bottom: 10px; /* Espacio entre el logo y el título */
-  width: 80px;  /* Ajusta el tamaño del logo */
-  height: 80px; /* Ajusta el tamaño del logo */
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra a la imagen */
+.custom-card-body {
+  padding: 15px;
 }
 
-/* Títulos de los cuadrados */
-.square p {
-  font-size: 16px;
-  color: #333;
+.card-title {
+  font-size: 1.5rem;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
-/* Descripción debajo de los cuadrados */
-.square .description {
-  font-size: 14px;
-  color: #555;  /* Color gris para la descripción */
-  margin-top: 10px;
-  padding: 0 10px;
+.card-text {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }
 
-
-
-/* Estilo para el logo en el centro */
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;  /* Ajusta el tamaño del logo */
-  height: 100px; /* Ajusta el tamaño del logo */
-  background-image: url("../imagenes/logo.jpg"); /* Ruta del logo */
-  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-  background-position: center; /* Centra la imagen */
-  border-radius: 50%;  /* Si deseas bordes redondeados */
-  border: 2px solid #fff; /* Borde blanco para darle efecto */
-}
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .square {
-    width: 90%; /* Los cuadrados ocupan más espacio en pantallas pequeñas */
-  }
-}
-
-a {
-  text-decoration: none;  /* Elimina el subrayado */
-  color: inherit;  /* El color de los enlaces tomará el color del texto */
-  outline: none;  /* Elimina el borde azul de enfoque */
-  -webkit-tap-highlight-color: transparent; /* Elimina el color del borde en dispositivos móviles */
-}
-
-/* Eliminar el borde azul cuando el enlace está en foco */
-a:focus {
-  outline: none;  /* Elimina el borde azul cuando el enlace es clickeado */
-}
-
-a {
-  text-decoration: none;  /* Elimina el subrayado */
-  color: inherit;  /* El color de los enlaces tomará el color del texto */
-  outline: none;  /* Elimina el borde azul de enfoque */
-}
-.square {
-  text-decoration: none;
-}
-
-/* Efecto al pasar el mouse sobre los recuadros */
-.square:hover {
-  transform: scale(1.05);  /* Aumenta ligeramente el tamaño al pasar el mouse */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
-}
-
-/* Diseño para las redes sociales */
+/* Redes sociales */
 .social-links {
   background-color: rgba(52, 213, 71, 0.9);
   padding: 20px;
@@ -238,8 +96,8 @@ a {
 
 .social-icons a {
   margin: 0 15px;
-  outline: none; /* Elimina la línea azul del enfoque */
-  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
+  outline: none;
+  text-decoration: none;
 }
 
 .social-icons img {
@@ -253,15 +111,3 @@ a {
 .social-icons img:hover {
   transform: scale(1.1);
 }
-
-@media (max-width: 768px) {
-  .social-links h3 {
-    font-size: 1.2rem;
-  }
-
-  .social-icons img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
