@@ -1,4 +1,3 @@
-// === SLIDER 1 (Opiniones con fotos) ===
 let slides = document.querySelectorAll("#slider-testimonios .slide");
 let current = 0;
 
@@ -9,7 +8,6 @@ function nextSlide() {
 }
 setInterval(nextSlide, 3000);
 
-// === SLIDER 2 (Comentarios sin foto) ===
 const comentariosSlider = document.getElementById("slider-comentarios");
 const btnEnviar = document.getElementById("btnEnviar");
 
@@ -17,7 +15,6 @@ let comentarios = JSON.parse(localStorage.getItem("comentarios")) || [];
 let comentarioInterval = null;
 let currentComment = 0;
 
-// Renderizar comentarios en el carrusel
 function renderComentarios() {
   comentariosSlider.innerHTML = "";
 
@@ -34,11 +31,9 @@ function renderComentarios() {
     comentariosSlider.appendChild(div);
   });
 
-  // Reiniciar rotación
   iniciarCarruselComentarios();
 }
 
-// Función que rota los comentarios
 function iniciarCarruselComentarios() {
   if (comentarioInterval) clearInterval(comentarioInterval);
   const slides2 = comentariosSlider.querySelectorAll(".slide");
@@ -52,10 +47,8 @@ function iniciarCarruselComentarios() {
   }, 4000);
 }
 
-// Inicializar al cargar la página
 renderComentarios();
 
-// === Enviar nuevo comentario ===
 btnEnviar.addEventListener("click", () => {
   const nombre = document.getElementById("nombreUsuario").value.trim();
   const comentario = document.getElementById("comentarioUsuario").value.trim();

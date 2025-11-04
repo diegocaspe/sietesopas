@@ -1,54 +1,54 @@
-/* Establece el fondo de la página */
+
 body {
-  background-image: url("../imagenes/fondo1.jpg"); /* Fondo de madera */
+  background-image: url("../imagenes/fondo1.jpg"); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex; /* Utiliza flexbox para el diseño */
-  flex-direction: column; /* Coloca los elementos en una columna */
-  height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  display: flex; 
+  flex-direction: column; 
+  height: 100vh; 
   margin: 0;
-  font-family: "EB Garamond", serif; /* Mantén la fuente actual */
+  font-family: "EB Garamond", serif; 
 }
 
-/* Contenido principal */
+
 .main-content {
-  flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
-  margin-top: 20px; /* Espacio entre el contenido y el navbar */
+  flex-grow: 1; 
+  margin-top: 20px; 
 }
 
-/* Estilo para el navbar */
+
 .navbar {
-  background-color: rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+  background-color: rgba(52, 213, 71, 0.68); 
   position: relative;
   z-index: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #FFFFFF; /* Blanco para los enlaces */
-  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+  color: #FFFFFF; 
+  font-size: 1.1rem; 
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+  color: #E27D2B; 
 }
 
 .navbar-toggler {
   border: none;
 }
 
-/* === Sección Sobre Nosotros === */
+
 .info-section {
   position: relative;
   text-align: center;
-  background: rgba(0, 128, 0, 0.7); /* Fondo oscuro para mejorar la legibilidad */
+  background: rgba(0, 128, 0, 0.7); 
   padding: 60px 20px;
 }
 
 .titulo {
   font-size: 2.2em;
-  color: #ffd700; /* Color dorado para el título */
+  color: #ffd700; 
   margin-bottom: 10px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
@@ -56,10 +56,10 @@ body {
 .subtitulo {
   font-size: 1.1em;
   margin-bottom: 40px;
-  color: #fff; /* Color blanco para subtítulos */
+  color: #fff; 
 }
 
-/* === Cajas de historia === */
+
 .contenedor-cajas {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +68,7 @@ body {
 }
 
 .caja {
-  background: rgba(0, 0, 0, 0.65); /* Fondo oscuro */
+  background: rgba(0, 0, 0, 0.65); 
   border-radius: 15px;
   width: 260px;
   padding: 20px;
@@ -90,23 +90,23 @@ body {
 }
 
 .caja h3 {
-  color: #ffd700; /* Títulos en dorado */
+  color: #ffd700;
   margin-bottom: 10px;
 }
 
 .caja p {
-  color: #fff; /* Texto en blanco para mejor contraste */
+  color: #fff; 
   font-size: 1em;
 }
 
-/* === Testimonios (carrusel con fotos) === */
+
 .testimonios-section {
   text-align: center;
   padding: 60px 20px;
 }
 
 .testimonios-section h2 {
-  color: #ffd700; /* Títulos en dorado */
+  color: #ffd700; 
   margin-bottom: 25px;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
@@ -134,10 +134,10 @@ body {
   position: relative;
 }
 
-/* Caja de testimonio con foto */
+
 .comentario-box {
   background: rgba(255, 255, 255, 0.95);
-  color: #222; /* Texto oscuro para contraste */
+  color: #222; 
   border-radius: 15px;
   padding: 30px 25px;
   margin: 0 auto;
@@ -165,10 +165,10 @@ body {
 
 .comentario-box .autor {
   font-weight: bold;
-  color: #1b5e20; /* Verde para el nombre del autor */
+  color: #1b5e20; 
 }
 
-/* === Comentarios de los Clientes (sin foto, carrusel) === */
+
 .comentarios-section {
   text-align: center;
   padding: 60px 20px;
@@ -197,11 +197,11 @@ body {
 
 .comentario-simple .autor {
   font-weight: bold;
-  color: #1b5e20; /* Verde para el nombre del autor */
+  color: #1b5e20; 
   margin-top: 10px;
 }
 
-/* === Formulario === */
+
 .formulario-comentario {
   background: rgba(255, 255, 255, 0.9);
   color: #222;
@@ -234,7 +234,7 @@ body {
   cursor: pointer;
 }
 
-/* Estilo para la sección de redes sociales */
+
 .social-links {
   background-color: rgba(52, 213, 71, 0.9);
   padding: 20px;
@@ -250,23 +250,23 @@ body {
 
 .social-icons a {
   margin: 0 15px;
-  outline: none; /* Elimina la línea azul del enfoque */
-  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
+  outline: none; 
+  text-decoration: none; 
 }
 
 .social-icons img {
-  width: 50px; /* Tamaño ajustado */
-  height: 50px; /* Asegura que la imagen sea cuadrada */
-  border-radius: 50%; /* Redondea las imágenes, haciéndolas circulares */
-  border: 2px solid #fff; /* Añade un borde blanco alrededor de los íconos */
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  border: 2px solid #fff;
   transition: transform 0.3s ease-in-out;
 }
 
 .social-icons img:hover {
-  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  transform: scale(1.1); 
 }
 
-/* Asegurar que los íconos sean responsivos en pantallas pequeñas */
+
 @media (max-width: 768px) {
   .social-links h3 {
     font-size: 1.2rem;
@@ -278,24 +278,24 @@ body {
   }
 }
 
-/* Estilo para el footer */
+
 footer {
-  background-color: rgba(52, 213, 71, 0.68); /* Fondo oscuro */
-  color: white; /* Texto blanco */
-  text-align: center; /* Centra el texto */
-  padding: 20px; /* Espaciado interno */
-  font-size: 1rem; /* Tamaño de fuente ajustado */
+  background-color: rgba(52, 213, 71, 0.68);
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  font-size: 1rem; 
 }
 
-/* Estilo para los enlaces dentro del footer */
+
 footer a {
-  color: #E27D2B; /* Color naranja para los enlaces */
-  text-decoration: none; /* Elimina el subrayado */
+  color: #E27D2B; 
+  text-decoration: none; 
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #FFD700; /* Color dorado cuando se pasa el ratón */
+  color: #FFD700;
 }
 
 

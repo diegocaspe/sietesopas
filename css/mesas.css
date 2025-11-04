@@ -1,25 +1,25 @@
-/* Estilo para el navbar */
+
 .navbar {
-    background-color: rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+    background-color: rgba(52, 213, 71, 0.68); 
     position: relative;
     z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #FFFFFF; /* Blanco para los enlaces */
-    font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+    color: #FFFFFF; 
+    font-size: 1.1rem; 
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+    color: #E27D2B; 
 }
 
 .navbar-toggler {
     border: none;
 }
 
-/* Estilo para el body */
+
 body {
     font-family: "Poppins", sans-serif;
     color: #333;
@@ -29,10 +29,10 @@ body {
     background-size: cover;
 }
 
-/* Estilo para las imágenes de las mesas */
+
 .mesa-img-wrapper {
-    width: 120px;  /* Tamaño fijo para las imágenes */
-    height: 120px; /* Tamaño fijo para las imágenes */
+    width: 120px;  
+    height: 120px; 
     border-radius: 16px;
     overflow: hidden;
     background: #f1f3f5;
@@ -44,10 +44,10 @@ body {
 .mesa-img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;  /* Asegura que la imagen se ajuste sin distorsionarse */
+    object-fit: contain;  
 }
 
-/* Estilo para los botones de las mesas */
+
 .btn-success {
     background-color: #28a745;
     border: none;

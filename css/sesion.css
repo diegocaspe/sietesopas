@@ -1,25 +1,24 @@
-/* Estilo para el navbar */
 .navbar {
-    background-color: rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+    background-color: rgba(52, 213, 71, 0.68); 
     position: relative;
     z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #FFFFFF; /* Blanco para los enlaces */
-    font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+    color: #FFFFFF;
+    font-size: 1.1rem; 
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+    color: #E27D2B; 
 }
 
 .navbar-toggler {
     border: none;
 }
 
-/* Estilo para el body */
+
 body {
     font-family: "Poppins", sans-serif;
     color: #333;
@@ -29,7 +28,7 @@ body {
     background-size: cover;
 }
 
-/* Estilo para el formulario de inicio de sesión */
+
 .container {
     max-width: 100%;
 }
@@ -38,7 +37,7 @@ h2 {
     color: #fff;
 }
 
-/* Formulario */
+
 form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;

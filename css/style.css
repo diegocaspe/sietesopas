@@ -1,17 +1,16 @@
-/* Establece el fondo de la página */
 body {
-  background-image: url("../imagenes/fondo1.jpg");  /* Fondo de madera */
+  background-image: url("../imagenes/fondo1.jpg"); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: flex;
-  flex-direction: column; /* Coloca los elementos en una columna */
+  flex-direction: column; 
   height: 100vh;
   margin: 0;
   font-family: "EB Garamond", serif;
 }
 
-/* Estilo para el navbar */
+/* Navbar */
 .navbar {
   background-color: rgba(52, 213, 71, 0.68);
   position: relative;
@@ -28,7 +27,7 @@ body {
   color: #E27D2B;
 }
 
-/* Estilo para el carrusel */
+/*Carrusel */
 .carousel {
   border-radius: 10px;
   margin: 0 auto;
@@ -43,11 +42,11 @@ body {
   object-fit: cover;
 }
 
-/* Diseño para los cuadros de enlaces */
+/* Enlaces */
 .card.custom-card {
   border: 2px solid black;
   transition: transform 0.3s ease-in-out;
-  background-color: green; /* Fondo rojo pastel */
+  background-color: green; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

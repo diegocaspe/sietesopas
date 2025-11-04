@@ -1,4 +1,3 @@
-// --- Verificar sesión de usuario ---
 (function verificarSesion() {
   const empleado = sessionStorage.getItem('empleadoActual');
   if (!empleado) {
@@ -9,7 +8,6 @@
   }
 })();
 
-// --- Configuración de mesas ---
 const TABLAS_CONFIG = [
   { id: 'M1',  type: '4', img: '../imagenes/mesa4.png' },
   { id: 'M2',  type: '4', img: '../imagenes/mesa4.png' },
@@ -23,10 +21,8 @@ const TABLAS_CONFIG = [
   { id: 'M10', type: '2', img: '../imagenes/mesa2.png' },
   { id: 'M11', type: '4', img: '../imagenes/mesa4.png' },
   { id: 'M12', type: '1', img: '../imagenes/mesa1.png' },
-  // Agrega más mesas si lo necesitas...
 ];
 
-// --- Cargar y guardar estado ---
 const STORAGE_KEY = 'estadoMesasDemo';
 
 function loadEstado() {
@@ -44,7 +40,6 @@ function saveEstado(estado) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(estado));
 }
 
-// Renderizar mesas
 function renderMesas() {
   const cont = document.getElementById('gridMesas');
   const estado = loadEstado();
@@ -81,17 +76,14 @@ function renderMesas() {
 
     cont.appendChild(card);
 
-    // Lógica para cambiar el estado
     card.querySelector('.toggle-btn').addEventListener('click', () => {
       const curr = loadEstado();
       const nuevo = curr[t.id].estado === 'disponible' ? 'ocupada' : 'disponible';
       curr[t.id] = { estado: nuevo, by: empleado, at: new Date().toISOString() };
       saveEstado(curr);
-      renderMesas(); // Re-renderizar
+      renderMesas();
     });
   });
 }
 
-// Cargar mesas al iniciar
 document.addEventListener('DOMContentLoaded', renderMesas);
-

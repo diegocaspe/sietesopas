@@ -7,29 +7,29 @@ body {
   background-size: cover;
 }
 
-/* Estilo para el navbar */
+
 .navbar {
-    background-color:rgba(52, 213, 71, 0.68); /* Tono madera cálido que refleja el estilo del restaurante */
+    background-color:rgba(52, 213, 71, 0.68); 
     position: relative;
     z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
 .navbar .navbar-nav .nav-link {
-  color: #FFFFFF; /* Blanco para los enlaces */
-  font-size: 1.1rem; /* Ajuste en el tamaño de los enlaces */
+  color: #FFFFFF; 
+  font-size: 1.1rem; 
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #E27D2B; /* Naranja cuando se pasa el ratón sobre los enlaces */
+  color: #E27D2B; 
 }
 
 .navbar-toggler {
     border: none;
 }
 
-/* === Encabezado Verde === */
+
 header {
   text-align: center;
   padding: 40px 20px;
@@ -51,7 +51,7 @@ header p {
   color: #e8f5e9;
 }
 
-/* === Botones de Categorías === */
+
 .category-buttons {
   text-align: center;
   margin: 25px 0;
@@ -77,7 +77,7 @@ header p {
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
-/* === Barra de búsqueda === */
+
 .search-bar {
   text-align: center;
 }
@@ -97,7 +97,7 @@ header p {
   box-shadow: 0 0 8px #43a047;
 }
 
-/* === Secciones === */
+
 .menu-section {
   margin: 30px auto;
   width: 90%;
@@ -114,7 +114,7 @@ header p {
   margin-bottom: 20px;
 }
 
-/* === Platos === */
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -159,7 +159,7 @@ header p {
   font-size: 16px;
 }
 
-/* Diseño para las redes sociales */
+
 .social-links {
   background-color: rgba(52, 213, 71, 0.9);
   padding: 20px;
@@ -175,8 +175,8 @@ header p {
 
 .social-icons a {
   margin: 0 15px;
-  outline: none; /* Elimina la línea azul del enfoque */
-  text-decoration: none; /* Elimina cualquier subrayado que pueda aparecer */
+  outline: none; 
+  text-decoration: none; 
 }
 
 .social-icons img {

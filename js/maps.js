@@ -8,21 +8,21 @@ function initMap() {
     { id: "map6", lat: -12.118985190895915, lng: -77.02802697593206, name: "Siete Sopas Miraflores" },
     { id: "map7", lat: -12.055952516544929, lng: -76.97160092808355, name: "Siete Sopas Santa Anita" },
     { id: "map8", lat: -12.015985958763366, lng: -76.99877987131256, name: "Siete Sopas SJ Lima" },
-    { id: "map9", lat: -12.06449306788892, lng:-77.01493053948543, name: "Siete Sopas Gamarra" },
+    { id: "map9", lat: -12.06449306788892, lng: -77.01493053948543, name: "Siete Sopas Gamarra" },
   ];
 
   locations.forEach(loc => {
     const map = new google.maps.Map(document.getElementById(loc.id), {
       center: { lat: loc.lat, lng: loc.lng },
-      zoom: 17, // Ajusta el zoom para acercar más el mapa
-      disableDefaultUI: true,  // Desactiva todos los controles predeterminados
-      zoomControl: true,      // Activa el control de zoom
-      streetViewControl: false, // Desactiva la vista en calle (el icono del muñequito)
-      mapTypeControl: false,   // Desactiva el control de tipo de mapa (satélite/mapa)
-      scaleControl: false,     // Desactiva la escala
-      rotateControl: false,    // Desactiva el control de rotación
-      attributionControl: false, // Elimina la atribución "Datos del mapa" y "Condiciones"
-      gestureHandling: "greedy",  // Permite el zoom con la rueda del ratón
+      zoom: 17,
+      disableDefaultUI: true,
+      zoomControl: true,
+      streetViewControl: false,
+      mapTypeControl: false,
+      scaleControl: false,
+      rotateControl: false,
+      attributionControl: false,
+      gestureHandling: "greedy",
     });
 
     new google.maps.Marker({
@@ -32,5 +32,3 @@ function initMap() {
     });
   });
 }
-
-
