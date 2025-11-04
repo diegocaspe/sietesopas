@@ -1,14 +1,20 @@
-/* Fondo de madera */
+/* Establece el fondo de la página */
 body {
   background-image: url("../imagenes/fondo1.jpg"); /* Fondo de madera */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;        /* Utiliza flexbox para el diseño */
+  display: flex; /* Utiliza flexbox para el diseño */
   flex-direction: column; /* Coloca los elementos en una columna */
-  height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
   margin: 0;
   font-family: "EB Garamond", serif; /* Mantén la fuente actual */
+}
+
+/* Contenido principal */
+.main-content {
+  flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+  margin-top: 20px; /* Espacio entre el contenido y el navbar */
 }
 
 /* Estilo para el navbar */
@@ -32,92 +38,203 @@ body {
   border: none;
 }
 
-/* Contenedor de la información de la empresa */
-.info-box {
-  display: flex;
-  align-items: center; /* Alinea verticalmente la imagen y el texto */
-  margin-bottom: 30px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto de transición */
+/* === Sección Sobre Nosotros === */
+.info-section {
+  position: relative;
+  text-align: center;
+  background: rgba(0, 128, 0, 0.7); /* Fondo oscuro para mejorar la legibilidad */
+  padding: 60px 20px;
 }
 
-.info-img-container {
-  flex-shrink: 0; /* Evita que la imagen se reduzca */
-  margin-right: 20px;
-}
-
-.info-img {
-  width: 100%; /* Ajusta el tamaño de la imagen */
-  height: 150px; /* Fija la altura de las imágenes */
-  object-fit: cover; /* Mantiene la relación de aspecto sin distorsionar */
-  border-radius: 10px;
-}
-
-.info-text {
-  color: white;
-  flex-grow: 1;
-}
-
-h2 {
-  font-size: 2rem;
+.titulo {
+  font-size: 2.2em;
+  color: #ffd700; /* Color dorado para el título */
   margin-bottom: 10px;
-  color: #52d541; /* Un verde suave */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-/* Contenedor del carrusel */
-.carousel {
-  max-width: 800px; /* Limita el ancho máximo del carrusel */
-  margin: 0 auto; /* Centra el carrusel en la pantalla */
-  width: 100%; /* Asegura que ocupe todo el espacio disponible, pero con un límite */
-  display: block; /* Asegura que el carrusel se muestre como un bloque */
+.subtitulo {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #fff; /* Color blanco para subtítulos */
 }
 
-/* Contenedor del carrusel */
-.carousel {
-  max-width: 800px; /* Limita el ancho máximo del carrusel */
-  margin: 0 auto; /* Centra el carrusel en la pantalla */
-  width: 100%; /* Asegura que ocupe todo el espacio disponible, pero con un límite */
-  display: block; /* Asegura que el carrusel se muestre como un bloque */
-}
-
-/* Contenedor de las imágenes del carrusel */
-.carousel-item {
+/* === Cajas de historia === */
+.contenedor-cajas {
   display: flex;
-  align-items: center;
-  justify-content: center; /* Centra el contenido del carrusel */
-  transition: none !important; /* Elimina cualquier transición de cambio de tamaño */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
-/* Estilo para las imágenes del carrusel */
-.carousel-item img {
-  border-radius: 50%; /* Hace que las imágenes sean circulares */
-  width: 15vw; /* El tamaño de las imágenes será relativo al 15% del ancho de la ventana */
-  height: 15vw; /* Asegura que la imagen sea cuadrada (relativo al ancho de la ventana) */
-  object-fit: cover; /* Asegura que la imagen mantenga la proporción sin distorsión */
-  object-position: center; /* Centra la imagen dentro del círculo */
-  transition: none !important; /* Elimina cualquier transición extra */
-  display: block; /* Asegura que la imagen se muestre como un bloque */
-  margin: 0 auto; /* Centra la imagen dentro de su contenedor */
-}
-
-/* Fondo y bordes redondeados del carrusel */
-.carousel-inner {
+.caja {
+  background: rgba(0, 0, 0, 0.65); /* Fondo oscuro */
+  border-radius: 15px;
+  width: 260px;
   padding: 20px;
-  background-color: #f0e4d7; /* Color de fondo suave para el carrusel */
-  border-radius: 15px; /* Bordes redondeados para el carrusel */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para los controles del carrusel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #52d541; /* Verde de la marca */
+.caja:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
 }
 
+.caja img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
-/* Diseño para las redes sociales */
+.caja h3 {
+  color: #ffd700; /* Títulos en dorado */
+  margin-bottom: 10px;
+}
+
+.caja p {
+  color: #fff; /* Texto en blanco para mejor contraste */
+  font-size: 1em;
+}
+
+/* === Testimonios (carrusel con fotos) === */
+.testimonios-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonios-section h2 {
+  color: #ffd700; /* Títulos en dorado */
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 250px;
+}
+
+.slide {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Caja de testimonio con foto */
+.comentario-box {
+  background: rgba(255, 255, 255, 0.95);
+  color: #222; /* Texto oscuro para contraste */
+  border-radius: 15px;
+  padding: 30px 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comentario-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffd700;
+}
+
+.comentario-box blockquote {
+  font-style: italic;
+  margin: 20px auto 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.comentario-box .autor {
+  font-weight: bold;
+  color: #1b5e20; /* Verde para el nombre del autor */
+}
+
+/* === Comentarios de los Clientes (sin foto, carrusel) === */
+.comentarios-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.comentarios-section h2 {
+  color: #ffd700;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  margin-bottom: 30px;
+}
+
+.comentario-simple {
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+  border-radius: 15px;
+  padding: 30px 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.comentario-simple blockquote {
+  font-style: italic;
+  color: #333;
+}
+
+.comentario-simple .autor {
+  font-weight: bold;
+  color: #1b5e20; /* Verde para el nombre del autor */
+  margin-top: 10px;
+}
+
+/* === Formulario === */
+.formulario-comentario {
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.formulario-comentario textarea,
+.formulario-comentario input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+}
+
+.formulario-comentario button {
+  background-color: #ffd700;
+  color: #1b5e20;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Estilo para la sección de redes sociales */
 .social-links {
   background-color: rgba(52, 213, 71, 0.9);
   padding: 20px;
@@ -138,17 +255,18 @@ h2 {
 }
 
 .social-icons img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #fff;
+  width: 50px; /* Tamaño ajustado */
+  height: 50px; /* Asegura que la imagen sea cuadrada */
+  border-radius: 50%; /* Redondea las imágenes, haciéndolas circulares */
+  border: 2px solid #fff; /* Añade un borde blanco alrededor de los íconos */
   transition: transform 0.3s ease-in-out;
 }
 
 .social-icons img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
 }
 
+/* Asegurar que los íconos sean responsivos en pantallas pequeñas */
 @media (max-width: 768px) {
   .social-links h3 {
     font-size: 1.2rem;
@@ -158,6 +276,26 @@ h2 {
     width: 40px;
     height: 40px;
   }
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: rgba(52, 213, 71, 0.68); /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+  color: #E27D2B; /* Color naranja para los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #FFD700; /* Color dorado cuando se pasa el ratón */
 }
 
 

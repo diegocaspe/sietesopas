@@ -57,6 +57,31 @@ form {
   color: black;
 }
 
+/* Estilo para los mensajes flash */
+.flash-messages {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: none; /* Por defecto, el contenedor está oculto */
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flash-messages.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash-messages.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
 
 /* Estilo para el navbar */
 .navbar {
@@ -121,4 +146,3 @@ form {
     height: 40px;
   }
 }
-
